@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>27/09/22</title>
+    <title>27 de setembro de 2022</title>
 
     <style>
+
         body {
+            text-align: justify;
             font-family: Arial, Helvetica, sans-serif;
             margin: auto;
             max-width: 960px;
@@ -17,69 +19,73 @@
             text-indent: 50px;        
             margin: auto;
             max-width: 960px; 
-        }
-        #bloco {
+        }    
+        h4 {
+            margin-left: 50px;
+        }  
+        pre {        
             background-color: rgb(230, 227, 227);
             max-width: 500px;
             margin: auto;
-        }
-        img {
-            max-width: 960px
+            margin-bottom: 30px;
+        }   
+        figure {
+            margin: 0;
+            padding: 0;
+        }    
+        figcaption{
+            font-size: 10px;
         }
     </style>
 </head>
 <body>
+<div class="container">
+
     <header>
-        <h1 style="color:blue; text-align: center;">Hello, World!</h1>
+    <h1 style="color:blue; text-align: center;">Hello, World!</h1>
     </header>  
 
-    <h2>"Quando esta página da Web foi criada? 
-        <p>Verifique o <strong>título da página</strong> para obter a <em>resposta</em>".</p></h2>
-
-    <div class="container">
+    <h2>Quando esta página da Web foi criada?</h2> 
+    <p>Verifique o <strong>título da página</strong> para obter a <em>resposta</em>.</p>
+    
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, temporibus dolorem laudantium perferendis maxime ipsum hic tempora libero vel minima pariatur. Aperiam sed tenetur adipisci magnam consequuntur, nostrum expedita cumque?</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium quidem omnis illo eos illum accusantium ullam, at sequi maxime quibusdam perferendis suscipit. Cum exercitationem, dolorum inventore optio quas debitis iste.</p>     
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ipsam neque perferendis ratione alias aut possimus iusto non dolorum adipisci iure laudantium sint, quia nemo nam officiis omnis laboriosam ut.</p>
-    </div>
-
-    <h2>"Os elementos HTML utilizados nesta página até agora foram:"</h2>
-    <ul style="list-style: none;">
-        <li>&lth1&gt</li>
-        <li>&lth2&gt</li>
-        <li>&ltp&gt</li>
-        <li>&ltem&gt</li>
-        <li>&ltstrong&gt</li>
-        <li>&ltol&gt</li>
-        <li>&ltli&gt</li>
-        
-    </ul>
-
-
-    <h3>O elemento &ltimg&gt</h3>   
-
-    <p>O elemento HTML &ltimg&gt representa a inserção de imagem no documento, sendo implementado também pelo HTML5 para uma melhor experiência com o elemento &ltfigure&gt e &ltfigcaption&gt.</p>
-
     
 
-    <pre><code>
-        <p id="bloco">
-        <b>Exemplo de uso:</b>
+    <h2>"Os elementos HTML utilizados nesta página até agora foram:"</h2>
+    <ul>
+        <li>&lt;!DOCTYPE.html&gt;</li>
+        <li>&lt;h1&gt;</li>
+        <li>&lt;h2&gt;</li>
+        <li>&lt;p&gt;</li>
+        <li>&lt;em&gt;</li>
+        <li>&lt;strong&gt;</li>
+        <li>&lt;ol&gt;</li>
+        <li>&lt;li&gt;</li>        
+    </ul>
+    
+    <h3>O elemento &lt;img&gt;</h3>   
 
+    <p>O elemento HTML &lt;img&gt; representa a inserção de imagem no documento, sendo implementado também pelo HTML5 para uma melhor experiência com o elemento &lt;figure&gt; e &lt;figcaption&gt;.</p>
 
-            &ltfigure&gt
-                &ltimg src="imagem.jpg" alt="Minha Figura" &gt
-                &ltfigcaption&gtInformações da Figura&lt/figcaption&gt
-            &lt/figure&gt
+    <h4>Exemplo de uso:</h4>    
 
-        </p>
-    </code></pre>
+    <pre>
+        <code>        
+            &lt;figure&gt;
+                &lt;img src="imagem.jpg" alt="Minha Figura" &gt;
+                &lt;figcaption&gtInformações da Figura&lt;/figcaption&gt;
+            &lt;/figure&gt;
+        </code>
+    </pre>
 
     <figure>
-        <img src="HTML-e-CSS-Guia-basico-1024x427.png" alt="Html e CSS">
+        <img src="./imagens/HTML-e-CSS-Guia-basico-1024x427.png" alt="Html e CSS" width="960">
         <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.brasilcode.com.br%2Fhtml-e-css-guia-basico%2F&psig=AOvVaw3sty7GMPNgQ6ja51jNzXim&ust=1664994338036000&source=images&cd=vfe&ved=0CA4QjhxqFwoTCNiA17mZx_oCFQAAAAAdAAAAABAH">
         <figcaption>Créditos: Brasil Code</figcaption></a>
     </figure>
 
-        
+</div>        
 </body>
 </html>
