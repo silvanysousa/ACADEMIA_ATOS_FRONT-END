@@ -1,0 +1,22 @@
+.container {   
+    height: 300px;
+    width: 400px;
+    
+    background-color: blue;
+    border-radius: 10%;    
+}
+
+.elemento {             
+    width: 100px;
+    height: 50px;
+
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 300px;    
+    font-weight: bold;  
+    margin-bottom: 33.3px;    
+}
+
