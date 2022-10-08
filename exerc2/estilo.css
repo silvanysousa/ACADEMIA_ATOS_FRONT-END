@@ -1,7 +1,6 @@
 .container {   
     height: 300px;
-    width: 400px;
-    
+    width: 400px;    
     background-color: blue;
     border-radius: 10%;    
 }
@@ -9,7 +8,6 @@
 .elemento {             
     width: 100px;
     height: 50px;
-
     background-color: red;
     display: flex;
     justify-content: center;
