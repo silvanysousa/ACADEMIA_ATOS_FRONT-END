@@ -8,13 +8,12 @@
 
 .elemento {             
     width: 100px;
-    height: 50px;
+    height: 60px;
     background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 300px;    
     font-weight: bold;  
-    margin-bottom: 33.3px;    
+    margin-bottom: 20px;    
 }
-
