@@ -1,0 +1,37 @@
+.container {   
+    height: 300px;
+    width: 400px;    
+
+    background-color: blue;
+    border-radius: 10%;  
+    margin: auto;
+    /*overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;  */
+        
+    
+    position: relative;   
+    
+           
+}
+
+.elemento {             
+    width: 100px;
+    height: 50px;
+
+    background-color: red;
+    font-weight: bold;  
+
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    left: 300px;
+    
+    
+    /*position: sticky;
+    left: 300px;*/
+        
+            
+}
