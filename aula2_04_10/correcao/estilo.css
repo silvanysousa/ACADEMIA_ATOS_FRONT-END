@@ -5,14 +5,12 @@
     background-color: blue;
     border-radius: 10%;  
     margin: auto;
-    /*overflow: hidden;
+
+    overflow: hidden;
     display: flex;
-    flex-direction: column-reverse;  */
-        
+    flex-direction: column-reverse;      
     
-    position: relative;   
-    
-           
+    position: relative;              
 }
 
 .elemento {             
@@ -26,12 +24,14 @@
     justify-content: center;
     align-items: center;
     
-    position: absolute;
-    left: 300px;
-    
-    
-    /*position: sticky;
+    /*position: absolute;
     left: 300px;*/
         
-            
+    position: sticky;
+    left: 300px;         
+    
+    /*pseudo classe
+.elemento:first-child {
+    border-radius: 0px 0px 30px 0px;
+}*/ 
 }
