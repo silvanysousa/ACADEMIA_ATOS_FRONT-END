@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: antiquewhite;    
+}
+
+table {
+    height: 50px;
+    width: 80%;
+    border-collapse: collapse;
+    margin: 30px auto;
+    border: 1px solid black;
+}
+
+caption {
+    padding-bottom: 30px;    
+}
+
+a {
+    margin: 30px;
+}
+
+th {    
+    padding: 5px;
+    text-align: left;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+}
+
+.yellowgreen {
+    background-color: yellowgreen;
+}
+
+.orange {
+    background-color: orange;    
+}
+
+.gold {
+    background-color: gold;
+}
+
+.salmon {
+    background-color: salmon;
+}
+
+.lightseagreen {
+    background-color: lightseagreen;
+}
+
+.lightsteelblue {
+    background-color: lightsteelblue;
+}
+
+.skyblue {
+    background-color: skyblue;
+}
+
+.lightblue {
+    background-color: lightblue;
+}
+
+.dodgerblue {
+    background-color: dodgerblue;
+}
+
+.pink {
+    background-color: pink;
+}
+

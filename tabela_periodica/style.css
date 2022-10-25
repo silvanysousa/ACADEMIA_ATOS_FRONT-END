@@ -1,49 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Quicksand', sans-serif;
 }
 
-caption {
-    font-size: 2.5em;
-    margin-bottom: 50px;
+body {
+    background-color: antiquewhite;  
 }
 
-table {  
-    margin: 30px auto;	
+header {
+    padding: 10px;
+    
 }
 
-tr, td {
-    width: 50px;   
-    height: 50px;
-    border-radius: 10%;    
-    padding: 0px 12px 5px 12px;
+header h1 {
+    font-size: 40px;
 }
 
-span {       
-    font-size: 0.6em;      
+.tabela1 {  
+    padding: 10px 100px 10px 100px;    	    
+}
+
+.tabela1 tr, td {
+    width: 40px;   
+    height: 40px;
+    border-radius: 10%;      
+    transition: 0.2s ease-in-out;    
+}
+
+td:hover {
+    background-color: antiquewhite;
+    box-shadow: 5px 5px 5px black;
+    transform: scale(1.5);        
+}
+
+span {    
+    margin: 10px 50px 0px 10px;     
+    font-size: 10px;         
 }
 
 h1 {
     text-align: center;
-    font-size: 1.5em;    
+    font-size: 25px;    
 }
 
 p {
     text-align: center;
-    font-size: 0.5em;
+    font-size: 10px;
 }
 
-.darkseagreen {
-    background-color: greenyellow;
+a {
+    text-decoration: none;    
+}
+
+#none {
+    box-shadow: none;
+    transform: none;
+}
+
+caption {
+    padding-left: 10px;
+    font-size: 15px;
+    text-align: left;        
+}
+
+footer {
+    margin: 40px 0px 0px 100px;
+}
+
+footer tr, td {        
+    height: 10px;
+    width: 170px;  
+    font-size: 15px;
+    text-align: center;
+    align-items: center;           
+}
+
+.yellowgreen {
+    background-color: yellowgreen;
 }
 
 .orange {
     background-color: orange;    
 }
 
-.yellow {
-    background-color: yellow;
+.gold {
+    background-color: gold;
 }
 
 .salmon {
@@ -54,16 +98,20 @@ p {
     background-color: lightseagreen;
 }
 
-.mediumturquoise {
-    background-color: mediumturquoise;
+.lightsteelblue {
+    background-color: lightsteelblue;
+}
+
+.skyblue {
+    background-color: skyblue;
 }
 
 .lightblue {
     background-color: lightblue;
 }
 
-.steelblue {
-    background-color: steelblue;
+.dodgerblue {
+    background-color: dodgerblue;
 }
 
 .pink {
