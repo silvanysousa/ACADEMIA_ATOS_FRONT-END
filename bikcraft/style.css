@@ -32,6 +32,7 @@ header {
     background-color: var(--c12);
 }
 
+
 .header-container {
     width: 1200px;
     height: 96px;
@@ -195,7 +196,7 @@ footer img {
 /*INDEX*/
 
 .titulo-index-grid {  /*introducao-bg* - remover no css e no index*/ 
-    
+    margin-bottom: 100px;
 }
 
 .container-index-grid { /*introducao*/
@@ -224,6 +225,14 @@ footer img {
     margin-bottom: 80px;
 }
 
+.container-index-imagem {
+    margin-bottom: -80px;
+}
+
+.container-index-grid img {
+    height: 100%;        
+}
+
 .botao {
     color: var(--p5);
     font-family: 'Poppins';    
@@ -239,5 +248,148 @@ footer img {
     display: flex;    
     justify-content: center;
     align-items: center;
+}
+
+.index-escolhaasua {
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 32px;
+    color: var(--c11);       
+}
+
+.index-escolhaasua h2 {
+    padding-bottom: 50px; 
+    margin-left: 350px;
+}
+
+.index-escolhaasua h2::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.index-3bicicletas { /*bicicletas-lista*/
+    padding-top: 100px;
+    padding-bottom: 120px;
+    margin-bottom: 100px;
+}
+
+.index-3bicicletas ul {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    list-style: none;
+}
+
+article ul li h3 {
+    margin-top: 20px; 
+    margin-bottom: 20px;       
+}
+
+article ul li h3::before {
+    content: "-";    
+    color: var(--p1);
+    margin-right: 10px;
+}
+
+article ul li p {
+    margin-left: 30px;
+}
+
+.tec-avan { /*tec-bg*/
+    background-color: var(--c11);  
+    margin-bottom: 100px; 
+    display: flex;
+    justify-content: center; 
+}
+
+.tec-avan-container {
+    width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.tec-avan h1 {
+    margin-top: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;         
+    text-transform: uppercase;
+    color: var(--c5);
+}
+
+.tec-avan .p1 {
+    margin-top: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--w);
+}
+
+.tec-avan .p2 {    
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--c5);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.tec-avan a {
+    color: var(--p1);
+    text-transform: uppercase;
+    text-decoration: underline 2px;           
+}
+
+.tec-avan .p1::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.tec-avan h2 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--w);
+}
+
+.tec-avan .p3 {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--c5);
+    margin-top: 8px;
+}
+
+.tec-avan-imagem img {
+    width: 100%;    
+    margin-top: -80px;
+    margin-bottom: -80px;    
+}
+
+.tec-conteudo {
+    padding-top: 20px;   
+    justify-content: center; 
+}
+
+.tec-conteudo a {
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 24px;    
+    color:var(--p1);    
+}
+
+.tec-conteudo2 {
+    display: flex;
+    gap: 40px;
+}
+
+.tec-conteudo2 img {
+    padding-top: 40px;
 }
 
