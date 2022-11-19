@@ -931,3 +931,101 @@ article ul li p {
     padding-right: 150px;
     margin-bottom: 30px;
 }
+
+/*CONTATO*/
+
+#contato {
+    background-color: var(--w);
+}
+
+#contato .main-container {
+    padding-bottom: 300px;
+}
+
+.contato-container { /*contato*/
+    width: 1200px;
+    margin: auto;    
+    display: grid;
+    grid-template-columns: 5fr 7fr;  
+    margin-top: -200px;  
+}
+
+.dados, .formulario {
+    padding: 60px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);    
+}
+
+.dados {
+    background-color: var(--c12);    
+}
+
+.dados h2 {
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--w);
+    margin-bottom: 50px;
+}
+
+.formulario {
+    background-color: var(--w);
+}
+
+.endereco, .contato-meios {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--c4);
+}
+
+.endereco {
+    margin-bottom: 30px;
+}
+
+.contato-meios {
+    margin-bottom: 60px;
+}
+
+address .tel {
+    margin-top: 30px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;    
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form label {
+    display: block;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 16px;
+    color: var(--c11);
+    margin-bottom: 5px;
+}
+
+.form input {
+    border: none;
+    padding: 10px;
+}
+
+.form textarea {
+    border: none;   
+    margin-bottom: 80px; 
+}
+
+.areatexto {
+    grid-column: span 2;
+}
+
