@@ -628,7 +628,7 @@ article ul li p {
     justify-content: space-between;
 }
 
-.listabotao p {
+.listabotao a {
     margin-top: 100px;    
 }
 
@@ -745,5 +745,189 @@ article ul li p {
     margin-right: 5px;
 }
 
+/*BICICLETA-INTERNA*/
 
+.bicicletas2-fundo {
+    background-color: var(--c11);
+}
 
+.bicicletas2-container {
+    width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.bicicletas2-imagens {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bicicletas2-imagens img {
+    flex: 1;
+    min-width: 200px;
+}
+
+.bicicletas2-imagens img:first-child {
+    min-width: 100%;
+}
+
+.bicicletas2-conteudo p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--c5);
+    padding-bottom: 20px;
+}
+
+.bicicletas-comprar {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--c6);
+    display: flex;
+}
+
+.bicicletas-comprar a {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.bicicletas-comprar img {
+    margin-right: 8px;
+}
+
+.informacoes {
+    padding-bottom: 10px;
+}
+
+.informacoes, .fichatecnica {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    color: var(--w);
+}
+
+.informacoes-bicicleta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.informacoes-bicicleta h3 {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--w);
+}
+
+.informacoes-bicicleta p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--c5);
+}
+
+.fichatecnica {
+    padding-bottom: 20px;
+}
+
+.fichatecnica-bicicleta {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.015em;
+    color: var(--c4);
+    list-style: none;
+    margin-left: 20px;
+    padding-right: 50px;
+    padding-left: 20px;
+}
+
+.fichatecnica-bicicleta span {
+    color: var(--c6);    
+}
+
+.fichatecnica-bicicleta li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-escolhaasua2 {
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 200px;
+}
+.bicicletas-escolhaasua2 {   
+    margin-top: 10px;
+    padding-top: 100px;
+    padding-bottom: 50px; 
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--c11);    
+}
+    
+.bicicletas-escolhaasua2 h2::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.container-escolhaasua2 ul {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    list-style: none;
+}
+
+.seguro-fundo {
+    background-color: var(--c10);    
+}
+
+.seguro-container {
+    width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.seguro-imagem {
+    margin-top: -100px;    
+}
+
+.seguro-conteudo h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--w);
+    padding-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.seguro-conteudo p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--c5);
+    padding-right: 150px;
+    margin-bottom: 30px;
+}
