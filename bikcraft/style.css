@@ -250,6 +250,8 @@ footer img {
     display: flex;    
     justify-content: center;
     align-items: center;
+    border: none;
+    cursor: pointer;
 }
 
 .index-escolhaasua {
@@ -948,6 +950,7 @@ article ul li p {
     display: grid;
     grid-template-columns: 5fr 7fr;  
     margin-top: -200px;  
+    margin-bottom: 150px;
 }
 
 .dados, .formulario {
@@ -1003,7 +1006,7 @@ address .tel {
 .form {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 20px;    
 }
 
 .form label {
@@ -1027,5 +1030,54 @@ address .tel {
 
 .areatexto {
     grid-column: span 2;
+}
+
+.lojas {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.lojalocal h2 {
+    margin-left: 350px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--c11);
+    margin-bottom: 50px;
+}
+
+.lojalocal h2::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.end-loja-rj, .end-loja-sp {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.end-loja-rj h3, .end-loja-sp h3 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+    color: #000000;  
+    padding-bottom: 20px;  
+    padding-top: 20px;
+}
+
+.horario {
+    margin-top: 30px;
+    margin-left: 30px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
 }
 
