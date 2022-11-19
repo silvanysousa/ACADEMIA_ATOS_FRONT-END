@@ -417,7 +417,7 @@ article ul li p {
 
 .parceiros ul {
     max-width: 1400px;
-    margin-left: 300px;  
+    margin: auto;  
     list-style: none;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -552,4 +552,82 @@ article ul li p {
     line-height: 16px;
     color: var(--c6);
     padding-left: 60px;
+}
+
+/*BICICLETAS*/
+
+.main-titulo .h1-bicicletas {
+    padding-bottom: 60px;
+}
+
+.bicicletas-fundo {
+    background-color: var(--c11);
+    box-shadow: inset 550px 0px white;
+}
+
+.bicicletas {
+    width: 1200px;
+    margin: auto;
+}
+
+.bicicletas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 0px 60px 0px ;
+}
+
+.imagem {
+    position: relative;
+}
+
+.preco {
+    background-color: var(--c12);
+    display: inline-block;
+    padding: 8px 16px 8px 8px;
+    position: absolute;
+    top: 20px;
+    left: 482px;
+    color: var(--w);
+    border-radius: 3px;    
+}
+
+.bicicletas .conteudo h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    color: var(--c11);
+    margin-bottom: 20px;
+}
+
+.bicicletas .conteudo p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--c8);
+    margin-bottom: 20px;
+}
+
+.bicicletas .conteudo .magic {
+    color: var(--w);
+}
+
+.bicicletas .conteudo img {
+    margin-right: 10px;
+}
+
+.bicicletas .conteudo li {
+    list-style: none;    
+}
+
+.listabotao {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listabotao p {
+    margin-top: 100px;    
 }
