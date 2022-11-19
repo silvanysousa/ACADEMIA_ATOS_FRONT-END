@@ -109,6 +109,7 @@ header {
     width: 1200px;
     margin: auto;
     margin-top: 124px;
+    margin-bottom: 100px;
 }
 
 .main-conteudo-container {
@@ -132,12 +133,12 @@ header {
     font-size: 18px;
     line-height: 24px;
     color: var(--c10);
-    margin-top: 20px;
+    margin-top: 20px;    
 }
 
 footer {
     background-color: var(--c12);
-    margin-top: 120px;
+    padding-top: 80px;
 }
 
 .footer-container {
@@ -196,11 +197,11 @@ footer img {
 
 /*INDEX*/
 
-.titulo-index-grid {  /*introducao-bg* - remover no css e no index*/ 
+.titulo-index-grid {  
     margin-bottom: 100px;
 }
 
-.container-index-grid { /*introducao*/
+.container-index-grid { 
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 40px;  
@@ -269,7 +270,7 @@ footer img {
     color: var(--p1);
 }
 
-.index-3bicicletas { /*bicicletas-lista*/
+.index-3bicicletas { 
     padding-top: 100px;
     padding-bottom: 120px;
     margin-bottom: 100px;
@@ -473,4 +474,82 @@ article ul li p {
 .depoimento .conteudo {
     padding: 250px;
     align-self: end;
+}
+
+.seguros {
+    background-color: var(--c11);    
+}
+
+.seguros-container {
+    width: 1200px;
+    padding-left: 350px;
+}
+
+.seguros-conteudo {
+    display: grid;
+    grid-template-columns:  repeat(4, 1fr);    
+}
+
+.seguros-container h1 {
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 72px;
+    color: var(--w);
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.seguros-container h1::after {
+    content: ".";
+    color: var(--p1);
+}
+
+.seguros-container h2 {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: var(--c6);
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
+
+.seguros-container .ouro {
+    color: var(--p1);
+}
+
+.seguros-container li {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--w);
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.seguros-container li::before {
+    content: "✓";
+    color: var(--p1);
+    padding-right: 5px;
+}
+
+.seguros-conteudo p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: var(--w) 
+}
+
+.seguros-conteudo sup {
+    font-family: 'Poppins';    
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--c6);
+    padding-left: 60px;
 }
