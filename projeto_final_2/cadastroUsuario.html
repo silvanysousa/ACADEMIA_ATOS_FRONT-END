@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Condomínio Blue Coast</title>
+</head>
+<body>
+    <main>
+        <div class="bg">
+            <div class="container">
+                <div>
+                    <img src="imagens/bluecoast.jpg" alt="bluecoast">
+                </div>
+                <div class="formulario">
+                    <h1>Cadastro Usuário</h1>
+                    <form action="#" method="post">
+                        <div>
+                            <label for="inome"></label>
+                            <input class="input" type="text" name="nome" id="inome" placeholder="Nome" required>
+                        </div>
+                        <div>
+                            <label for="icpf"></label>
+                            <input class="input" type="text" name="cpf" id="icpf" placeholder="CPF" required>
+                        </div>
+                        <div class="telefone">
+                            <label for="itelefone"></label>
+                            <input class="input" type="text" name="telefone" id="itelefone" placeholder="Telefone" required>
+                        </div>                        
+                        <div class="unidade">
+                            <label for="ibloco">Bloco</label>
+                            <select class="select" name="bloco" id="ibloco">
+                                <option value="blocoA">A</option>
+                                <option value="blocoB">B</option>
+                                <option value="blocoC">C</option>
+                                <option value="blocoD">D</option>
+                                <option value="blocoE">E</option>
+                                <option value="blocoF">F</option>
+                            </select>
+                            <label for="iapartamento">Apartamento</label>
+                            <select class="select" name="apartamento" id="iapartamento">
+                                <option value="101">101</option>
+                                <option value="102">102</option>
+                                <option value="103">103</option>
+                                <option value="104">104</option>
+                                <option value="201">201</option>
+                                <option value="202">202</option>
+                                <option value="203">203</option>
+                                <option value="204">204</option>
+                                <option value="301">301</option>
+                                <option value="302">302</option>
+                                <option value="303">303</option>
+                                <option value="304">304</option>
+                            </select>                            
+                        </div>
+                        <div class="senha">
+                            <label for="isenhaUs"></label>
+                            <input class="input" type="password" name="senhaUs" id="isenhaUs" placeholder="Senha" required>
+                            
+                            <label for="isenhaUs2"></label>
+                            <input class="input" type="password" name="senhaUs2" id="isenhaUs2" placeholder="Repita a Senha" required>
+                        </div> 
+                        <div>
+                            <input class="botao" type="submit" value="enviar">
+                        </div>
+                        <div class="pergunta">
+                            <p>Já tem cadastro?<a href="login.html">Acesse</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
