@@ -5,42 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Condomínio Blue Coast</title>
+    <script src="script.js" defer></script>
+    <title>Usuário | Condomínio Blue Coast</title>
 </head>
 <body>
     <main>
         <div class="bg">
             <div class="container">
                 <div>
-                    <img src="imagens/bluecoast.jpg" alt="bluecoast">
+                    <a href="login.html"><img src="imagens/bluecoast.jpg" alt="bluecoast"></a>
                 </div>
                 <div class="formulario">
                     <h1>Cadastro Usuário</h1>
-                    <form action="#" method="post">
+                    <form action="usuario" method="post">
                         <div>
-                            <label for="inome"></label>
-                            <input class="input" type="text" name="nome" id="inome" placeholder="Nome" required>
+                            <label for="nome"></label>
+                            <input class="input" type="text" name="nome"  placeholder="Nome" id="nome" required>
                         </div>
                         <div>
-                            <label for="icpf"></label>
-                            <input class="input" type="text" name="cpf" id="icpf" placeholder="CPF" required>
+                            <label for="cpf"></label>
+                            <input class="input" type="text" name="cpf"  placeholder="CPF" id="cpf" required>
                         </div>
                         <div class="telefone">
-                            <label for="itelefone"></label>
-                            <input class="input" type="text" name="telefone" id="itelefone" placeholder="Telefone" required>
+                            <label for="telefone"></label>
+                            <input class="input" type="text" name="telefone"  placeholder="Telefone" id="telefone" required>
                         </div>                        
                         <div class="unidade">
-                            <label for="ibloco">Bloco</label>
-                            <select class="select" name="bloco" id="ibloco">
-                                <option value="blocoA">A</option>
-                                <option value="blocoB">B</option>
-                                <option value="blocoC">C</option>
-                                <option value="blocoD">D</option>
-                                <option value="blocoE">E</option>
-                                <option value="blocoF">F</option>
+                            <label for="bloco">Bloco</label>
+                            <select class="select" name="bloco" id="bloco">
+                                <option value="A">A</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="D">D</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
                             </select>
-                            <label for="iapartamento">Apartamento</label>
-                            <select class="select" name="apartamento" id="iapartamento">
+                            <label for="apartamento">Apartamento</label>
+                            <select class="select" name="apartamento" id="apartamento">
                                 <option value="101">101</option>
                                 <option value="102">102</option>
                                 <option value="103">103</option>
@@ -56,14 +57,12 @@
                             </select>                            
                         </div>
                         <div class="senha">
-                            <label for="isenhaUs"></label>
-                            <input class="input" type="password" name="senhaUs" id="isenhaUs" placeholder="Senha" required>
-                            
-                            <label for="isenhaUs2"></label>
-                            <input class="input" type="password" name="senhaUs2" id="isenhaUs2" placeholder="Repita a Senha" required>
-                        </div> 
+                            <label for="senha"></label>
+                            <input class="input" type="password" name="senha" placeholder="Senha" id="senha" required>                            
+                         </div> 
                         <div>
                             <input class="botao" type="submit" value="enviar">
+                            <input class="botao" type="reset" value="limpar">
                         </div>
                         <div class="pergunta">
                             <p>Já tem cadastro?<a href="login.html">Acesse</a></p>

@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Condomínio Blue Coast</title>
+    <script src="login.js" defer></script>
+    <title>Login | Condomínio Blue Coast</title>
 </head>
 <body>
     <main>
@@ -16,20 +17,23 @@
                 </div>
                 <div class="formulario">
                     <h1>Login</h1>
-                    <form action="#" method="post">
+                    <form action="login" method="post">
                         <div>
                             <label for="cpf"></label>
-                            <input class="input" type="text" name="cpf" id="icpf" placeholder="CPF" required>
+                            <input class="input" type="text" name="cpf" id="cpf" placeholder="CPF" required>
                         </div>
                         <div>
                             <label for="senha"></label>
-                            <input class="input" type="password" name="senha" id="isenha" placeholder="Senha" required>
+                            <input class="input" type="password" name="senha" id="senha" placeholder="Senha" required>
                         </div>
                         <div>
-                            <input class="botao" type="submit" value="Acessar">
+                            <input class="botao" id="login" type="submit" value="Acessar">
+                            <input class="botao" type="reset" value="limpar">
                         </div>
                         <div class="pergunta">
-                            <p>Não tem cadastro?<a href="cadastroUsuario.html">Cadastre-se</a></p>
+                            <p>Cadastre-se: 
+                            <a href="cadastroUsuario.html">Usuário</a>
+                            <a href="cadastroFuncionario.html">Funcionário</a></p>
                         </div>
                     </form>
                 </div>

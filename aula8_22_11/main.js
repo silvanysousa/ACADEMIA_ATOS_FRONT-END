@@ -1,94 +1,71 @@
-let nomeUs = document.getElementsById('nome')
-let sobrenUs = document.getElementsById('sobrenome')
-console.log(nomeUs)
-/*
+'use strict';
 
-// Exemplo 1
-function exibirAlerta() {
-    alert("Essa é a mensagem de alerta!")
+document.getElementById('nome').addEventListener('keyup', geraLogin)
+
+document.getElementById('sobrenome').addEventListener('keyup', geraLogin)
+
+function geraLogin () {
+  document.getElementById('login').value = document.getElementById('nome').value.toLowerCase() + '.' + document.getElementById('sobrenome').value.toLowerCase()
 }
 
-document.getElementById('btn-exemplo-1').onclick = exibirAlerta
+document.getElementById('formulario').addEventListener('submit', function (evento) {
+  evento.preventDefault();
+  enviarDado('nome');
+  enviarDado('sobrenome');
+  enviarDado('email');
+  enviarDado('login');
+  enviarDado('senha');
+  enviarDado('cep');
+  enviarDado('endereco');
+  enviarDado('complemento');
+  enviarDado('bairro');
+  enviarDado('cidade');
+  enviarDado('estado');
+  enviarDado('github');
+  enviarDado('academia');
+  enviarDado('professor');
+  enviarDado('termos');
+  enviarDado('info');
+  document.getElementById('tabela-dados').classList.remove('d-none');
+  alert('As informações foram salvas');
+  document.getElementById('formulario').reset();
+})
 
-// Exemplo 2
-document.getElementById('btn-exemplo-2').onclick = function () { document.getElementById('p-exemplo-2').innerHTML = "Texto substituído." }
-
-// Exemplo 3
-document.querySelector('#btn-exemplo-3').onclick = function () {
-    document.getElementById('exemplo-3').style.display = 'none'
+function enviarDado(campo) {
+  if(campo == 'info') {
+    document.getElementById('t-' + campo).innerText = document.forms.formulario.elements.info.value;
+  } else {
+    document.getElementById('t-' + campo).innerText = document.getElementById(campo).value;
+  }
 }
 
-// Exemplo 4
-document.querySelector('#btn-on').onclick = function () {
-    document.querySelector('.lampada').src = './images/lamp-on.png'
+const pesquisarCep = async () => {
+  const cep = document.getElementById('cep').value;
+  const url = `http://viacep.com.br/ws/${cep}/json/`;
+  
+  /* FETCH SEM AWAIT */
+  // fetch(url)
+  // .then(resposta => resposta.json())
+  // .then(function (retorno) {
+  //   console.log(retorno.bairro);
+  // });
+
+  const retornoUrl = await fetch(url);
+  const endereco = await retornoUrl.json();
+  if (endereco.erro) {
+    document.getElementById('cep-erro').classList.remove('d-none');
+  } else {
+    document.getElementById('cep-erro').classList.add('d-none');
+    preencherInputs(endereco);
+  }
 }
 
-document.querySelector('#btn-off').onclick = function () {
-    document.querySelector('.lampada').src = './images/lamp-off.png'
+function preencherInputs(endereco) {
+  document.getElementById('endereco').value = endereco.logradouro;
+  document.getElementById('bairro').value = endereco.bairro;
+  document.getElementById('cidade').value = endereco.localidade;
+  document.getElementById('estado').value = endereco.uf;
 }
 
-// Exemplo 5
-console.log("A área do círculo de raio 3 é " + Math.PI * Math.pow(3,2))
-
-// Exemplo 6
-let data = new Date()
-let dia = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado']
-
-document.querySelector('.dia-semana').innerHTML = dia[data.getDay()]
-
-// Exemplo 7
-document.getElementById('converter-temperatura').onclick = function () {
-    const celsius = document.getElementById('tempCelsius').value
-    const farenheit = document.getElementById('tempFarenheit')
-    farenheit.value = celsius * 1.8 + 32
-}
-
-/*
-EXEMPLOS DE JSON E FUNÇÕES
-const retornoURL = '{"USDBRL":{"code":"USD","codein":"BRL","name":"Dólar Americano/Real Brasileiro","high":"5.3991","low":"5.2817","varBid":"0.0005","pctChange":"0.01","bid":"5.3586","ask":"5.3596","timestamp":"1669152601","create_date":"2022-11-22 18:30:01"}}'
-const moeda = JSON.parse(retornoURL)
-//console.log(moeda.USDBRL.bid)
-// Função escrita tradicionalmente
-function tradicional(dado){
-    return dado
-}
-console.log(tradicional('Função Tradicional'))
-// Função escrita no formato anônimo
-let anonima = function (dado) {
-    return dado
-}
-console.log(anonima('Função Anônima'))
-// Função escrita no formato de seta (Arrow Function)
-let seta = dado => dado
-console.log(seta('Arrow Function'))
-*/
-/*
-// Exemplo 8
-document.getElementById('converter-moeda').onclick = function () {
-    const valorReal = document.getElementById('real').value
-    const valorDolar = document.getElementById('dolar')
-    //converterMoeda(valorReal, valorDolar)
-    converterMoedaAsync(valorReal, valorDolar)
-}
-// Consultando de forma síncrona
-function converterMoeda(real, dolar) {
-    const url = 'https://economia.awesomeapi.com.br/last/USD-BRL'
-    fetch(url).then(resposta => resposta.json())
-              .then(dados => {
-                dolar.value = dados.USDBRL.bid * real
-              })
-}
-
-
-// Consultando de forma assíncrona
-let converterMoedaAsync = async (real, dolar) => {
-    const url = 'https://economia.awesomeapi.com.br/last/USD-BRL'
-    const resposta = await fetch(url)
-    const dados = await resposta.json()
-    dolar.value = dados.USDBRL.bid * real
-}
-
-
-
-/*stringify -> converte igual ao parse*/
-/*aero function*/
+document.getElementById('cep')
+        .addEventListener('focusout', pesquisarCep);

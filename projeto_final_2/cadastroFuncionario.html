@@ -5,43 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Condomínio Blue Coast</title>
+    <script src="scriptF.js" defer></script>
+    <title>Funcionário | Condomínio Blue Coast</title>
 </head>
 <body>
     <main>
         <div class="bg">
             <div class="container">
                 <div>
-                    <img src="imagens/bluecoast.jpg" alt="bluecoast">
+                    <a href="login.html"><img src="imagens/bluecoast.jpg" alt="bluecoast"></a>
                 </div>
                 <div class="formulario">
                     <h1>Cadastro Funcionário</h1>
-                    <form action="#" method="post">
+                    <form action="funcionario" method="post">
                         <div>
-                            <label for="inome"></label>
-                            <input class="input" type="text" name="nome" id="inome" placeholder="Nome" required>
+                            <label for="nome"></label>
+                            <input class="input" type="text" name="nome" id="nome" placeholder="Nome" required>
                         </div>
                         <div>
-                            <label for="icpf"></label>
-                            <input class="input" type="text" name="cpf" id="icpf" placeholder="CPF" required>
+                            <label for="cpf"></label>
+                            <input class="input" type="text" name="cpf" id="cpf" placeholder="CPF" required>
                         </div>                        
                         <div class="cargo">
-                            <label for="icargo"></label>
-                            <input class="input" type="text" name="cargo" id="icargo" placeholder="Cargo" required>
+                            <label for="cargo"></label>
+                            <input class="input" type="text" name="cargo" id="cargo" placeholder="Cargo" required>
                         </div>   
                         <div class="empresa">
-                            <label for="iempresa"></label>
-                            <input class="input" type="text" name="empresa" id="iempresa" placeholder="Empresa" required>
+                            <label for="empresa">Empresa</label>
+                            <select class="select" name="empresa" id="empresa">
+                                <option value="empresa">Adjuve</option>                       
+                            </select>
                         </div>                       
                         <div class="senha">
-                            <label for="isenhaUs"></label>
-                            <input class="input" type="password" name="senhaUs" id="isenhaUs" placeholder="Senha" required>
-                            
-                            <label for="isenhaUs2"></label>
-                            <input class="input" type="password" name="senhaUs2" id="isenhaUs2" placeholder="Repita a Senha" required>
+                            <label for="senha"></label>
+                            <input class="input" type="password" name="senha" id="senha" placeholder="Senha" required> 
                         </div> 
                         <div>
                             <input class="botao" type="submit" value="enviar">
+                            <input class="botao" type="reset" value="limpar">
                         </div>
                         <div class="pergunta">
                             <p>Já tem cadastro?<a href="login.html">Acesse</a></p>
